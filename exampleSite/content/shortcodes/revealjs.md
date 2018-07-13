@@ -116,4 +116,4 @@ ___
 
 {{%/expand%}}
 
-* [{{%icon "sunglasses" %}} click here to view raw content](https://raw.githubusercontent.com/flatiron-labs/hugo-theme-docdock/master/exampleSite/content/shortcodes/revealjs.md)
+* [{{%icon "sunglasses" %}} click here to view raw content](https://raw.githubusercontent.com/flatiron-labs/docdock/master/exampleSite/content/shortcodes/revealjs.md)

@@ -1,11 +1,11 @@
 +++
 title = "Credits"
-description = "contributors and packages used by hugo-theme-docdock"
+description = "contributors and packages used by docdock"
 +++
 
 
 ## github contributors
-{{%ghcontributors "https://api.github.com/repos/flatiron-labs/hugo-theme-docdock/contributors?per_page=100" %}}
+{{%ghcontributors "https://api.github.com/repos/flatiron-labs/docdock/contributors?per_page=100" %}}
 
 ### Other contribution
 <div class="ghContributors">

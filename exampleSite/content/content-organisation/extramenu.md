@@ -15,7 +15,7 @@ Example from the current website, **note the `pre` param** which allows you to i
 	pre = "<h3>More</h3>"
 	name = "<i class='fa fa-github'></i> Github repo"
 	identifier = "ds"
-	url = "https://github.com/flatiron-labs/hugo-theme-docdock"
+	url = "https://github.com/flatiron-labs/docdock"
 	weight = 1
 
 	[[menu.shortcuts]]

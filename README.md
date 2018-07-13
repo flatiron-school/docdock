@@ -22,7 +22,7 @@ Visit the [theme documentation](http://docdock.netlify.com/) to see what is goin
 - Customizable look and feel
 
 
-![Overview](https://github.com/flatiron-labs/hugo-theme-docdock/raw/master/images/tn.png)
+![Overview](https://github.com/flatiron-labs/docdock/raw/master/images/tn.png)
 
 ## Installation
 
@@ -61,7 +61,7 @@ If submodule is no-go, use 3rd option.
 On your root of Hugo execute:
 
 ```
-$ git submodule add https://github.com/flatiron-labs/hugo-theme-docdock.git themes/docdock
+$ git submodule add https://github.com/flatiron-labs/docdock.git themes/docdock
 ```
 Next initialize submodule for parent git repo:
 
@@ -78,7 +78,7 @@ If you want to freeze changes to DocDock theme itself and use still submodules, 
 This method results that files are checked out locally, but won't be visible from parent git repo. Probably you will build site locally with `hugo` command and use result from `public/` on your own.
 
 ```
-$ git clone https://github.com/flatiron-labs/hugo-theme-docdock.git themes/docdock
+$ git clone https://github.com/flatiron-labs/docdock.git themes/docdock
 ```
 
 
@@ -87,9 +87,9 @@ $ git clone https://github.com/flatiron-labs/hugo-theme-docdock.git themes/docdo
 All files from theme will be tracked inside parent repo, to update it, have to override files in theme. Download following zip and extract inside `themes/`.
 
 ```
-https://github.com/flatiron-labs/hugo-theme-docdock/archive/master.zip
+https://github.com/flatiron-labs/docdock/archive/master.zip
 ```
-Name of theme in next step will be `hugo-theme-docdock-master`, can rename as you wish.
+Name of theme in next step will be `docdock-master`, can rename as you wish.
 
 ## Configure
 
@@ -101,7 +101,7 @@ $ cp themes/docdock/exampleSite/config.toml .
 
 Change following `config.toml` line as needed, depending on method above:
 ```
-theme = "<hugo-theme-docdock-dir-name>"
+theme = "<docdock-dir-name>"
 ```
 Comment out following line, so default `themes/` will be used:
 
