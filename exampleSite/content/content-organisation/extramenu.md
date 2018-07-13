@@ -9,13 +9,13 @@ You can define additional menu entries in the navigation menu without any link t
 Edit the website configuration `config.toml` and add a `[[menu.shortcuts]]` entry for each link your want to add.
 
 
-Example from the current website, **note the `pre` param** which allows you to insert HTML code and used here to separate content's menu from this "static" menu 
+Example from the current website, **note the `pre` param** which allows you to insert HTML code and used here to separate content's menu from this "static" menu
 
 	[[menu.shortcuts]]
 	pre = "<h3>More</h3>"
 	name = "<i class='fa fa-github'></i> Github repo"
 	identifier = "ds"
-	url = "https://github.com/vjeantet/hugo-theme-docdock"
+	url = "https://github.com/flatiron-labs/hugo-theme-docdock"
 	weight = 1
 
 	[[menu.shortcuts]]

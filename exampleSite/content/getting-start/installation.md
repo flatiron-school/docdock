@@ -47,7 +47,7 @@ If submodule is no-go, use 3rd option.
 On your root of Hugo execute:
 
 ```
-$ git submodule add https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+$ git submodule add https://github.com/flatiron-labs/hugo-theme-docdock.git themes/docdock
 ```
 Next initialize submodule for parent git repo:
 
@@ -65,16 +65,16 @@ If you want to freeze changes to DocDock theme itself and use still submodules, 
 This method results that files are checked out locally, but won't be visible from parent git repo. Probably you will build site locally with `hugo` command and use result from `public/` on your own.
 
 ```
-$ git clone https://github.com/vjeantet/hugo-theme-docdock.git themes/docdock
+$ git clone https://github.com/flatiron-labs/hugo-theme-docdock.git themes/docdock
 ```
 
 
 ### 3. Install DocDock from ZIP
 
-All files from theme will be tracked inside parent repo, to update it, have to override files in theme. [{{%icon download%}} download following zip](https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip) and extract inside `themes/`.
+All files from theme will be tracked inside parent repo, to update it, have to override files in theme. [{{%icon download%}} download following zip](https://github.com/flatiron-labs/hugo-theme-docdock/archive/master.zip) and extract inside `themes/`.
 
 ```
-https://github.com/vjeantet/hugo-theme-docdock/archive/master.zip
+https://github.com/flatiron-labs/hugo-theme-docdock/archive/master.zip
 ```
 Name of theme in next step will be `hugo-theme-docdock-master`, can rename as you wish.
 
