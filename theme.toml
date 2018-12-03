@@ -3,10 +3,10 @@
 
 name = "docDock"
 license = "MIT"
-licenselink = "https://github.com/flatiron-labs/docdock/blob/master/LICENSE.md"
+licenselink = "https://github.com/flatiron-school/docdock/blob/master/LICENSE.md"
 description = "Documentation theme for Hugo"
-homepage = "https://github.com/flatiron-labs/docdock"
-repo = "https://github.com/flatiron-labs/docdock"
+homepage = "https://github.com/flatiron-school/docdock"
+repo = "https://github.com/flatiron-school/docdock"
 tags = ["documentation", "menu","slide","search"]
 features = ["documentation","menu","nested sections","search","slide", "attachments"]
 min_version = 0.32
