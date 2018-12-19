@@ -348,7 +348,7 @@ article section.page {
   article section.page img {
     border: 0;
     max-width: 100%;
-    margin: 3rem auto;
+    margin: 0;
     display: block;
     text-align: center; }
     article section.page img.border {
