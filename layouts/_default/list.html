@@ -1,8 +1,6 @@
 {{ define "main" }}
-	<!-- displays _index.md -->
 	{{ .Content }}
-	<!-- displays content of all pages w/ param title: Readme -->
-	{{ range .Pages}}
+	{{ range first 10 .Pages}}
 		{{if eq .Params.title "Readme"}}
 			{{.Content}}
 		{{end}}
