@@ -505,38 +505,49 @@ body {
   font-size: 1.05rem;
   line-height: 1.7; }
 
+/* Sean added customizations 12/23/18 */
 h1, h2, h3, h4, h5, h6 {
   margin: 0.85rem 0 1.7rem 0;
-  text-rendering: optimizeLegibility; }
+  font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  text-rendering: optimizeLegibility;
+  font-weight: normal; }
 
 h1 {
-  font-size: 3.25rem; }
+  font-size: 3.25rem;
+  line-height: 2.8rem; }
 
 h2 {
-  font-size: 2.55rem; }
+  font-size: 2.55rem;
+  line-height: 2.3rem; }
 
 h3 {
-  font-size: 2.15rem; }
+  font-size: 2.15rem;
+  line-height: 1.8rem; }
 
 h4 {
-  font-size: 1.8rem; }
+  font-size: 1.8rem;
+  line-height: 1.6rem; }
 
 h5 {
-  font-size: 1.4rem; }
+  font-size: 1.4rem;
+  line-height: 1.2rem; }
 
 h6 {
-  font-size: 0.9rem; }
+  font-size: 0.9rem;
+  line-height: 0.75rem; }
 
 p {
   margin: 1.7rem 0; }
 
+/* Modified by Sean 12/24/18 */
 ul, ol {
-  margin-top: 1.7rem;
-  margin-bottom: 1.7rem; }
+  margin-top: 0.5rem;
+  /* margin-bottom: 1.7rem; } */
   ul ul, ul ol, ol ul, ol ol {
     margin-top: 0;
     margin-bottom: 0; }
 
+/* Modified by Sean 12/24/18 */
 blockquote {
   margin: 1.7rem 0;
   padding-left: 0.85rem; }
