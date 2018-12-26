@@ -2,9 +2,22 @@
 <span id="sidebar-toggle-span">
 <a href="#" id="sidebar-toggle" data-sidebar-toggle=""><i class="fa fa-bars"></i> navigation</a>
 </span>
-{{if .Site.Home.Content }} 
-{{.Site.Home.Content}}
-{{else}}           
+{{if .Site.Home.Content }}
+<!-- displays content of all pages w/ param includehomepagetop: true -->
+	{{ range .Pages}}
+		{{if eq .Params.includehomepagetop true}}
+			{{.Content}}
+		{{end}}
+	{{end}}
+	<!-- displays _index.md -->
+	{{.Site.Home.Content}}
+	<!-- displays content of all pages w/ param includehomepagebottom: true -->
+	{{ range .Pages}}
+		{{if eq .Params.includehomepagebottom true}}
+			{{.Content}}
+		{{end}}
+	{{end}}
+{{else}}
 	{{if eq .Site.Language.Lang "fr"}}
 		<h1>Personaliser la page d'accueil</h1>
 		<p>

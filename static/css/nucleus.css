@@ -507,37 +507,45 @@ body {
 
 /* Sean added customizations 12/23/18 */
 h1, h2, h3, h4, h5, h6 {
-  margin: 0.85rem 0 1.7rem 0;
+  margin: 1.7rem 0 1.2rem 0;
   font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   text-rendering: optimizeLegibility;
-  font-weight: normal; }
+  font-weight: bolder; }
 
 h1 {
-  font-size: 3.25rem;
-  line-height: 2.8rem; }
+  font-size: 2.2rem;
+  line-height: 2.0rem; }
 
 h2 {
-  font-size: 2.55rem;
-  line-height: 2.3rem; }
+  font-size: 1.9rem;
+  line-height: 1.7rem;
+  text-indent: -.2rem; }
 
 h3 {
-  font-size: 2.15rem;
-  line-height: 1.8rem; }
+  font-size: 1.5rem;
+  line-height: 1.3rem;
+  text-decoration: underline; }
 
 h4 {
-  font-size: 1.8rem;
-  line-height: 1.6rem; }
+  font-size: 1.3rem;
+  line-height: 1.1rem;
+  text-decoration: underline;
+  font-style: italic; }
 
 h5 {
-  font-size: 1.4rem;
-  line-height: 1.2rem; }
+  font-size: 1rem;
+  line-height: 0.8rem;
+  text-decoration: underline;
+  font-style: italic; }
 
 h6 {
-  font-size: 0.9rem;
-  line-height: 0.75rem; }
+  font-size: 0.8rem;
+  line-height: 0.6rem;
+  text-decoration: underline;
+  font-style: italic; }
 
 p {
-  margin: 1.7rem 0; }
+  margin: 1.2rem 0; }
 
 /* Modified by Sean 12/24/18 */
 ul, ol {

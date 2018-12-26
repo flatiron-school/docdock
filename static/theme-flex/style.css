@@ -312,7 +312,7 @@ article section.page {
     text-align: center;
     /* text-transform: uppercase; */
     color: #060606;
-    font-weight: 200;
+    font-weight: bolder;
     /* font-size: 3.25rem; */
     line-height: 2.7rem; }
     /* line-height: 0;
@@ -775,9 +775,9 @@ ul.children.children-card {
   .expand-label {
     font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     /* padding: 1rem 0 2rem; */
-    font-size: 2.55rem;
-    line-height: 2.3rem;
-    font-weight: lighter;
+    font-size: 1.8rem;
+    line-height: 1.5rem;
+    font-weight: bolder;
     color: black;
     text-indent: -.7rem; }
 
