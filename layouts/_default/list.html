@@ -1,20 +1,11 @@
 {{ define "main" }}
-{{if .Content}}
-{{ .Content }}
-{{else }}
-{{ $paginator := .Paginator }}
+	<!-- displays _index.md -->
+	{{ .Content }}
+	<!-- displays content of all pages w/ param title: Readme -->
+	{{ range .Pages}}
+		{{if eq .Params.title "Readme"}}
+			{{.Content}}
+		{{end}}
+	{{end}}
 
-<div class="extra-pagination inner">
-{{ partial "pagination.html" $paginator }}
-</div>
-
-{{ range $index, $page := $paginator.Pages }}
-   {{ .Render "li" }}
-{{ end }}
-
-<div style="margin-bottom:2rem"></div>
-
-{{ partial "pagination.html" $paginator }}
-
-{{end}}
 {{end}}
