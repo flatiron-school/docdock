@@ -1,5 +1,7 @@
 {{ define "main" }}
-		{{ .Content }} 
+		{{ .Content }}
+		{{len .Pages}}
+		{{len .Sections}}
 		{{ range first (len .Pages) .Pages}}
 
 			{{if eq .Params.title "Readme"}}

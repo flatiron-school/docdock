@@ -1,9 +1,0 @@
-{{ define "main" }}
-	{{ .Content }}
-	{{ range first 10 .Pages}}
-		{{if eq .Params.title "Readme"}}
-			{{.Content}}
-		{{end}}
-	{{end}}
-
-{{end}}
