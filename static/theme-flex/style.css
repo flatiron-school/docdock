@@ -307,7 +307,7 @@ article section.page {
   overflow-y: auto;
   padding: 2rem 4rem; }
   article section.page h1:first-of-type {
-    margin: 3rem 0rem;
+    margin: 2.5rem 0rem;
     font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
     /* text-transform: uppercase; */
