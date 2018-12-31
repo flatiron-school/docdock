@@ -732,8 +732,14 @@ ul.children.children-card {
 
   /* Below added by Sean 12/22/18 */
   .expand-label {
-    font-size: 1.5rem;
-    margin: 0.85rem 0 1.7rem 0; }
+    margin: 0.85rem 0 1.7rem 0;
+    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    /* padding: 1rem 0 2rem; */
+    font-size: 1.8rem;
+    line-height: 1.8rem;
+    font-weight: bolder;
+    color: black;
+    text-indent: -.5rem; }
 
   /* ttt-callout box - fixed position at the bottom of the page */
   .ttt-callout {
@@ -772,13 +778,9 @@ ul.children.children-card {
     font-size: .8rem;
     font-style: italic;}
 
-  .expand-label {
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
-    /* padding: 1rem 0 2rem; */
-    font-size: 1.8rem;
-    line-height: 1.5rem;
-    font-weight: bolder;
-    color: black;
-    text-indent: -.7rem; }
+  i.fa.fa-chevron-right {
+    text-indent: -.9rem; }
 
+  i.fa.fa-chevron-down {
+    text-indent: -1rem; }
 /*# sourceMappingURL=style.css.map */

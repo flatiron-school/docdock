@@ -514,33 +514,33 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.2rem;
-  line-height: 2.0rem; }
+  line-height: 2.2rem; }
 
 h2 {
   font-size: 1.9rem;
-  line-height: 1.7rem;
+  line-height: 1.9rem;
   text-indent: -.2rem; }
 
 h3 {
   font-size: 1.5rem;
-  line-height: 1.3rem;
+  line-height: 1.5rem;
   text-decoration: underline; }
 
 h4 {
   font-size: 1.3rem;
-  line-height: 1.1rem;
+  line-height: 1.3em;
   text-decoration: underline;
   font-style: italic; }
 
 h5 {
   font-size: 1rem;
-  line-height: 0.8rem;
+  line-height: 1rem;
   text-decoration: underline;
   font-style: italic; }
 
 h6 {
   font-size: 0.8rem;
-  line-height: 0.6rem;
+  line-height: 0.8rem;
   text-decoration: underline;
   font-style: italic; }
 

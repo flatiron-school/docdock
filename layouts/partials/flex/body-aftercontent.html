@@ -9,7 +9,7 @@
 
 <div class="footline">
     {{if .Params.tags }}
-    <div class="tags"> 
+    <div class="tags">
       {{ range $index, $tag := .Params.tags }}
         <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
       {{ end }}
@@ -31,7 +31,7 @@
     {{ if .Site.Params.editURL }}
     <div class="github-link">
       <a href="{{ .Site.Params.editURL }}{{ replace .File.Dir "\\" "/" }}{{ .File.LogicalName }}" target="blank"><i class="fa fa-code-fork"></i>
-        {{T "Edit-this-page"}}</a>
+        {{T "Edit-this-page:" }}{{ .Site.Params.editURL }}{{ replace .File.Dir "\\" "/" }}{{ .File.LogicalName }}</a>
     </div>
     {{end}}
   </div>
@@ -40,7 +40,7 @@
 	<div>
 {{ $footer := print "_footer." .Lang }}
 {{ range where .Site.Pages "File.BaseFileName" $footer }}
-  {{ .Content }} 
+  {{ .Content }}
 {{else}}
   {{ if .Site.GetPage "page" "_footer.md" }}
     {{(.Site.GetPage "page" "_footer.md").Content}}
