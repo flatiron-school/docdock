@@ -1,9 +1,7 @@
-+++
-title= "{{ replace .TranslationBaseName "-" " " | title }}"
-date= {{ .Date }}
-description = ""
-draft= true
-+++
+---
+title: {{ replace .TranslationBaseName "-" " " | title }}
+layout: post
+weight: 20
+---
 
-Lorem Ipsum.
-Notice `draft` is set to true.
+# {{ replace .TranslationBaseName "-" " " | title }}
