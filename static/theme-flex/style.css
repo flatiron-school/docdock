@@ -1,11 +1,5 @@
 @charset "UTF-8";
 @font-face {
-  font-family: 'Novacento Sans Wide';
-  src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot");
-  src: url("../fonts/Novecentosanswide-UltraLight-webfont.eot?#iefix") format("embedded-opentype"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff2") format("woff2"), url("../fonts/Novecentosanswide-UltraLight-webfont.woff") format("woff"), url("../fonts/Novecentosanswide-UltraLight-webfont.ttf") format("truetype"), url("../fonts/Novecentosanswide-UltraLight-webfont.svg#novecento_sans_wideultralight") format("svg");
-  font-style: normal;
-  font-weight: 200; }
-@font-face {
   font-family: 'Roboto';
   font-weight: 400;
   src: local("Roboto Regular"), local("Roboto-Regular"), url("../fonts/Roboto-Regular.ttf") format("truetype"); }
@@ -114,7 +108,7 @@ article > aside {
     list-style-type: none; }
     article > aside .menu > label {
       display: block;
-      font-family: 'Novacento Sans Wide', 'Helvetica', 'Tahoma', 'Geneva', 'Arial', sans-serif;
+      font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
       font-weight: 100;
       font-size: 130%;
       margin-left: 1rem; }
@@ -309,7 +303,7 @@ article section.page {
   padding: 2rem 4rem; }
   article section.page h1:first-of-type {
     margin: 2.5rem 0rem;
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
     /* text-transform: uppercase; */
     color: #060606;
@@ -731,10 +725,9 @@ ul.children.children-card {
 
   }
 
-  /* Below added by Sean 12/22/18 */
   .expand-label {
     margin: 0.85rem 0 1.7rem 0;
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     /* padding: 1rem 0 2rem; */
     font-size: 1.8rem;
     line-height: 1.8rem;
@@ -757,7 +750,7 @@ ul.children.children-card {
 
     /* ttt-callout header */
   .ttt-callout .ttt-callout-header {
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     padding: 1rem 0 2rem;
     font-size: 2.15rem;
     line-height: 1.8rem;

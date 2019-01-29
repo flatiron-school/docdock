@@ -509,7 +509,7 @@ body {
 /* Sean added customizations 12/23/18 */
 h1, h2, h3, h4, h5, h6 {
   margin: 1.7rem 0 1.2rem 0;
-  font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+  font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   text-rendering: optimizeLegibility;
   font-weight: bolder; }
 
