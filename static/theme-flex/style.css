@@ -697,6 +697,9 @@ ul.children.children-card {
   header > nav.shortcuts > li > a {
     max-width: 32px; }
 
+  header > nav.shortcuts label {
+    display: none; }
+
   .nav-select {
     display: block;
     margin-left: -10px;

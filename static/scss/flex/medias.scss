@@ -1,3 +1,4 @@
+// large screens
 @media(max-width:1024px) {
     section {
         margin-right: 0
@@ -9,6 +10,7 @@
 }
 
 
+// tablets and smaller
 @media(max-width:768px) {
     article {
         -webkit-box-orient: vertical;
@@ -53,6 +55,11 @@
     }
     header>nav.shortcuts>li>a {
         max-width: 32px;
+    }
+    header>nav.shortcuts {
+        label {
+            display: none
+        }
     }
 
     
