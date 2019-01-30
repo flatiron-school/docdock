@@ -64,50 +64,14 @@ section strong {
     font-weight: 500
 }
 
-
-
-
-
-
-
 .nav-select {
     background: #e5e5e5;
     display: none;
 }
 
-.searchbox {
-    margin: 0rem 0rem 0rem 0rem;
-    padding: 0rem 0rem;
-    padding-top: 1rem;
-    color: #012a3c;
-    text-align: center;
-}
-
-.searchbox input {
-    border: 1px solid #cccccc;
-    color: #555555;
-    display: inline-block;
-    font-size: 14px;
-    line-height: 20px;
-    padding-bottom: 6px;
-    padding-left: 12px;
-    padding-right: 12px;
-    padding-top: 6px;
-    width: 80%;
-}
-
-.searchbox span {
-    position: absolute;
-    float: right;
-    margin-top: -45px;
-    right: 30px;
-    cursor: pointer;
-}
-
 #sidebar-toggle-span {
     display: none;
 }
-
 
 #navigation {
     margin-top: 3rem;

@@ -1,0 +1,32 @@
+.search {
+    flex: auto;
+    align-self: flex-end;
+}
+
+.searchbox {
+    margin: 0rem 1rem 0rem 1rem;
+    padding: 0rem 0rem;
+    padding-top: 1rem;
+    color: #012a3c;
+    text-align: center;
+}
+
+.searchbox input {
+    border: 1px solid #cccccc;
+    color: #ffffff;
+    display: inline-block;
+    font-size: 14px;
+    line-height: 20px;
+    padding: 6px 12px;
+    margin-left: 1rem;
+    width: 80%;
+    background-color: inherit;
+}
+
+.searchbox span {
+    position: absolute;
+    float: right;
+    margin-top: -45px;
+    right: 30px;
+    cursor: pointer;
+}

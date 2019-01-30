@@ -17,17 +17,6 @@ header {
     top: 0;
     z-index: 100;
 
-
-    &:after {
-        background: url(ribbon.png) 0 0 / 100% no-repeat;
-        content: '';
-        height: .35rem;
-        left: 0;
-        position: absolute;
-        right: 0;
-        top: 100%
-    }
-
     a {
         text-decoration: none
     }
