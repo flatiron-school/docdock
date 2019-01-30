@@ -247,32 +247,33 @@ section strong {
   display: none; }
 
 #navigation {
-  margin-top: 3rem;
-  border-top: 1px solid #e6e6e6;
-  border-bottom: 1px solid #e6e6e6;
-  padding: 1rem 0rem;
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444;
+  padding: .5rem 0;
+  margin: .5rem 0;
   display: flex;
   flex-direction: row;
-  align-items: stretch; }
+  align-items: center;
+  justify-content: space-between; }
   #navigation a {
-    width: 50%;
-    flex: 1;
     display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    padding-right: 0px;
-    align-items: baseline;
-    color: #e5e5e5; }
+    color: #222;
+    align-items: center; }
     #navigation a i {
-      font-size: 4em;
-      margin: auto; }
+      font-size: 1.5em; }
     #navigation a label {
-      margin: auto;
+      padding: .25em;
       flex-grow: 2;
       align-self: stretch;
       font-size: 1.3rem; }
+    #navigation a label:hover {
+      cursor: pointer; }
   #navigation a.nav-next {
     text-align: right; }
+  #navigation a:hover {
+    text-decoration: none;
+    color: #00b3e6;
+    cursor: pointer; }
 
 .burger {
   display: none; }
@@ -558,6 +559,8 @@ footer {
       order: 3; }
     footer .footline .github-link {
       order: 4; }
+    footer .footline ._footer {
+      order: 5; }
     footer .footline .date {
       order: 3; }
 
