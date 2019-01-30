@@ -33,6 +33,7 @@ header {
   line-height: 3.5rem;
   margin-bottom: .35rem;
   padding: 0 2rem;
+  position: fixed;
   right: 0;
   top: 0;
   z-index: 100; }
@@ -706,4 +707,4 @@ ul.children.children-card {
     margin-left: -1rem;
     margin-right: -1rem; } }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style-test.css.map */

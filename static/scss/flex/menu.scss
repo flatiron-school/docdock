@@ -58,7 +58,7 @@ article>aside {
                     background-color: #eee;
                     * {
                         font-weight: bold;
-                        border-bottom: dotted 1px red;
+                        border-bottom: dotted 1px #00b3e6;
                     }
                 }
             }
@@ -87,6 +87,7 @@ article>aside {
                     order: 1;
                     width: 20px;
                     cursor: pointer;
+                    color: #00b3e6;
                 }
 
                 a {

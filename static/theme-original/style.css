@@ -132,7 +132,6 @@ body {
   margin-left: 0;
   margin-right: auto;
   display: block;
-  content: "";
   height: 1px;
   width: 0%;
   background-color: #238fbd;
@@ -841,7 +840,6 @@ td {
   height: 0;
   color: rgba(0, 0, 0, 0.8);
   pointer-events: none;
-  content: "";
   border: 5px solid transparent; }
 
 .tooltipped:hover:before, .tooltipped:hover:after, .tooltipped:active:before, .tooltipped:active:after, .tooltipped:focus:before, .tooltipped:focus:after {
