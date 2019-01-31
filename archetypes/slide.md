@@ -1,15 +1,14 @@
-+++
-title = "Slide title"
-type="slide"
-
-theme = "league"
-[revealOptions]
-transition= 'concave'
-controls= true
-progress= true
-history= true
-center= true
-+++
+---
+title: {{ replace .TranslationBaseName "-" " " | title }}
+type: "slide"
+theme: "league"
+revealOptions:
+    transition: 'concave'
+    controls: true
+    progress: true
+    history: true
+    center: true
+---
 
 # Slide 1
 

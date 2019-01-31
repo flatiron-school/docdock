@@ -104,7 +104,6 @@ body {
       margin-left:0; margin-right:auto;
     }
     display: block;
-    content: "";
     height: 1px;
     width: 0%;
     background-color: $main_link_hover_color;
@@ -597,7 +596,7 @@ body {
 }
 
 h2, h3, h4, h5, h6 {
-    font-family: "Lato", "Work Sans Bold", "Helvetica Bold", "Tahoma Bold", "Geneva Bold", "Arial Bold", sans-serif;
+    font-family: "--apple-system", "Lato", "Work Sans Bold", "Helvetica Bold", "Tahoma Bold", "Geneva Bold", "Arial Bold", sans-serif;
     text-rendering: optimizeLegibility;
     color: $main_other_text_color;
     font-weight: 400;
@@ -605,9 +604,8 @@ h2, h3, h4, h5, h6 {
 }
 
 h1 {
-    font-family: "Novacento Sans Wide", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
+    font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
-    text-transform: uppercase;
     color: $main_title_text_color;
     font-weight: 200;
 }
@@ -921,7 +919,6 @@ td {
     height: 0;
     color: rgba(0, 0, 0, 0.8);
     pointer-events: none;
-    content: "";
     border: 5px solid transparent;
 }
 
