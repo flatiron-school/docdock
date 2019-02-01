@@ -1,5 +1,5 @@
-/* ttt-callout box - fixed position at the bottom of the page */
-.ttt-callout {
+/* replaces ttt-callout  */
+blockquote {
   /* position: fixed;
   bottom: 35px;
   right: 20px; */
@@ -13,7 +13,8 @@
 }
 
 /* ttt-callout header */
-.ttt-callout .ttt-callout-header {
+/* no longer in use */
+/*.ttt-callout .ttt-callout-header {
   font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   padding: 1rem 0 2rem;
   font-size: 2.15rem;
@@ -22,6 +23,7 @@
   color: black;
 }
 
+
 .ttt-callout ul {
   padding: 0 1.5rem;
 }
@@ -29,6 +31,7 @@
 .ttt-callout ul li {
   margin: 0.5rem 0;
 }
+*/
 
 .ttt-highlight {
   padding: 0 0 0 1rem;
