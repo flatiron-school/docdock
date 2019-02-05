@@ -1,36 +1,36 @@
-  <div class="chevrons">
-    {{ partial "next-prev-page.html" . }}
-  </div>
+<div class="chevrons">
+  {{ partial "next-prev-page.html" . }}
+</div>
 
-  </section>
-</article>
+</section>
 
 <footer>
 
-<div class="footline">
+  <div class="footline">
     {{if .Params.tags }}
     <div class="tags">
       {{ range $index, $tag := .Params.tags }}
-        <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
+      <a class="label label-default" href="{{$.Site.BaseURL}}tags/{{ $tag | urlize }}">{{ $tag }}</a>
       {{ end }}
     </div>
     {{end}}
 
     {{with .Params.LastModifierDisplayName}}
     <div class="author">
-        <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a>
+      <i class='fa fa-user'></i> <a href="mailto:{{ $.Params.LastModifierEmail }}">{{ . }}</a>
     </div>
     {{end}}
 
     {{ if not .Page.Lastmod.IsZero }}
     <div class="date">
-        <i class='fa fa-calendar'></i> {{T "last-update-on"}} {{ .Page.Lastmod.Format "02/01/2006" }}
+      <i class='fa fa-calendar'></i> {{T "last-update-on"}} {{ .Page.Lastmod.Format "02/01/2006" }}
     </div>
     {{end}}
 
     {{ if .Site.Params.editURL }}
     <div class="github-link">
-      <a href="{{ .Site.Params.editURL }}{{ replace .File.Dir "\\" "/" }}{{ .File.LogicalName }}" target="blank"><i class="fa fa-code-fork"></i>
+      <a href="{{ .Site.Params.editURL }}{{ replace .File.Dir "\\" "/" }}{{ .File.LogicalName }}" target="blank"><i
+          class="fa fa-code-fork"></i>
         {{T "Edit-this-page"}}</a>
     </div>
     {{end}}
@@ -38,23 +38,15 @@
     <div class="_footer">
       {{ $footer := print "_footer." .Lang }}
       {{ range where .Site.Pages "File.BaseFileName" $footer }}
-          {{ .Content }}
+      {{ .Content }}
       {{else}}
-        {{ if .Site.GetPage "page" "_footer.md" }}
-          {{(.Site.GetPage "page" "_footer.md").Content}}
-        {{else}}
-            {{ T "create-footer-md" }}
-        {{end}}
+      {{ if .Site.GetPage "page" "_footer.md" }}
+      {{(.Site.GetPage "page" "_footer.md").Content}}
+      {{else}}
+      {{ T "create-footer-md" }}
       {{end}}
-    </div> 
-</div>
+      {{end}}
+    </div>
+  </div>
 
-
-<div>
-
-
-
-</div>
 </footer>
-
-{{ partial "flex/scripts.html" . }}

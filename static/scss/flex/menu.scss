@@ -1,4 +1,4 @@
-article>aside {
+aside {
     background-color: #f9f9f9;
     bottom: 0;
     box-sizing: border-box;
@@ -30,10 +30,14 @@ article>aside {
 
         ul {
             display: none;
-        } // first menu level
+        }
+
+        // first menu level
         >.dd-item {
             margin: 0.5rem 0px 0.5rem 20px;
-        } // menu items
+        }
+
+        // menu items
         .dd-item {
             padding-left: 1rem;
             list-style: none;
@@ -56,6 +60,7 @@ article>aside {
 
                 >div {
                     background-color: #eee;
+
                     * {
                         font-weight: bold;
                         border-bottom: dotted 1px #00b3e6;
@@ -70,7 +75,7 @@ article>aside {
             div {
                 display: flex;
                 flex-direction: row;
-                
+
                 * {
                     line-height: inherit;
                 }

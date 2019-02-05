@@ -1,9 +1,13 @@
-// Rules for managing screens of different sizes
-// context for screen widths
-// for context, the 13inch mbpro default resolution is 1440px wide
+// This file has CSS rules for managing screens of different sizes
+
+// context for screen widths:
+// The 13inch macbook pro default resolution is 1440px wide
 //      ...at other resolutions, it ranges between 1024px and 1680px
-// mobile phones devices widths range between ~320px to ~800 for the largest / highest resolution
+// giant retina displays go up all the way to 5120px across
+// mobile phones devices widths range between ~320px at the smallest
+// to ~800px for the largest / highest resolution
 // tablets fall in a middle range
+// see more about screen sizes at http://screensiz.es/
 
 // our strategy in general for managing screen widths is
 // - default styles apply to large screens
@@ -11,33 +15,29 @@
 // - that often means _hiding_ elements for small screens that don't belong
 
 // large but not the largest screens
-@media(max-width:1024px) {
+@media(max-width:1220px) {
     section {
         margin-right: 0;
+    }
+
+    nav.shortcuts {
+        label {
+            display: none;
+        }
     }
 }
 
 
 // tablets and smaller
 @media(max-width:768px) {
-    article {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column;
 
-        aside {
-            display: none;
-        }
+    // hides the left navigation by default
+    aside {
+        display: none;
+    }
 
-        section.page {
-            margin: 0 0;
-            padding: 1rem;
-        }
-
-        section.page #navigation label {
-            display: none;
-        }
+    #navigation label {
+        display: none;
     }
 
     footer {
@@ -54,20 +54,8 @@
 
         nav.shortcuts {
 
-            li a {
-                width: 3.5rem
-            }
-
             li .fa {
                 margin: 0;
-            }
-
-            li>a>label {
-                display: none;
-            }
-
-            li>a {
-                max-width: 32px;
             }
 
             label {
@@ -89,5 +77,11 @@
     article img {
         margin-left: -1rem;
         margin-right: -1rem;
+    }
+}
+
+@media(max-width:480px) {
+    .search {
+        display: none;
     }
 }

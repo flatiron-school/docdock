@@ -65,11 +65,6 @@ section strong {
     font-weight: 500
 }
 
-.nav-select {
-    background: #e5e5e5;
-    display: none;
-}
-
 #sidebar-toggle-span {
     display: none;
 }
@@ -104,13 +99,13 @@ section strong {
             cursor: pointer;
         }
 
-        
+
     }
 
     a.nav-next {
         text-align: right;
     }
-    
+
     a:hover {
         text-decoration: none;
         color: #00b3e6;
