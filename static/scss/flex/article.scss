@@ -108,6 +108,7 @@ article {
         color: #444;
         overflow: auto;
         padding: .5rem;
+        min-height: fit-content;
 
         .copy-to-clipboard {
             float: right;

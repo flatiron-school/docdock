@@ -725,14 +725,6 @@ i.fa.fa-chevron-down {
     header nav.shortcuts label {
       display: none; }
 
-  .nav-select {
-    display: block;
-    margin-left: -10px;
-    margin-right: -10px; }
-
-  .nav-select select {
-    display: block; }
-
   article img {
     margin-left: -1rem;
     margin-right: -1rem; } }
