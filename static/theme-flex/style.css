@@ -341,13 +341,15 @@ article {
   article p > code,
   article li code,
   article table code {
-    padding: 0 0.25rem; }
+    padding: 0 .25rem;
+    word-break: break-word; }
   article pre {
     background-color: #eee;
     border-radius: .2rem;
     color: #444;
     overflow: auto;
-    padding: .5rem; }
+    padding: .5rem;
+    min-height: fit-content; }
     article pre .copy-to-clipboard {
       float: right;
       position: relative;
@@ -683,12 +685,6 @@ blockquote {
   font-size: .8rem;
   font-style: italic; }
 
-i.fa.fa-chevron-right {
-  text-indent: -.9rem; }
-
-i.fa.fa-chevron-down {
-  text-indent: -1rem; }
-
 .expand-label {
   margin: 0.85rem 0 1.7rem 0;
   font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -697,6 +693,10 @@ i.fa.fa-chevron-down {
   line-height: 1.8rem;
   color: black;
   text-indent: -.5rem; }
+  .expand-label i.fa.fa-chevron-right {
+    text-indent: -.9rem; }
+  .expand-label i.fa.fa-chevron-down {
+    text-indent: -1rem; }
 
 @media (max-width: 1220px) {
   section {
@@ -706,9 +706,6 @@ i.fa.fa-chevron-down {
     display: none; } }
 @media (max-width: 768px) {
   aside {
-    display: none; }
-
-  #navigation label {
     display: none; }
 
   footer {
@@ -725,9 +722,14 @@ i.fa.fa-chevron-down {
     header nav.shortcuts label {
       display: none; }
 
-  article img {
-    margin-left: -1rem;
-    margin-right: -1rem; } }
+  article {
+    margin: 0;
+    padding: 0 1rem; }
+    article p {
+      margin: 0.5rem 0; }
+    article ul,
+    article ol {
+      margin-left: 0.5rem; } }
 @media (max-width: 480px) {
   .search {
     display: none; } }

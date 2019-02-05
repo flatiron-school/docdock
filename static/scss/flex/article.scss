@@ -99,7 +99,8 @@ article {
     p>code,
     li code,
     table code {
-        padding: 0 .25rem
+        padding: 0 .25rem;
+        word-break: break-word;
     }
 
     pre {
