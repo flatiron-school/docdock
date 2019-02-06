@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "flex/head.html" . }}
-    {{end}}
-  </head>
-  <body data-url="{{ .RelPermalink }}">
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "flex/body-beforecontent.html" . }}
-    {{end}}
-    
+
+<head>
+  <title>{{ block "title" . }}{{ .Site.Title }}{{ end }}</title>
+  {{if .Site.Params.themeStyle}}
+  {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
+  {{else}}
+  {{ partial "flex/head.html" . }}
+  {{end}}
+</head>
+
+<body data-url="{{ .RelPermalink }}">
+  {{if .Site.Params.themeStyle}}
+  {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
+  {{else}}
+  {{ partial "flex/body-beforecontent.html" . }}
+  {{end}}
+
+  <article>
+    {{if not .IsHome}}<h1>{{.Title}}</h1>{{end}}
     {{ block "main" . }}
     {{ end }}
-    
-    {{if .Site.Params.themeStyle}}
-      {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
-    {{else}}
-      {{ partial "flex/body-aftercontent.html" . }}
-    {{ end }}
+  </article>
 
-    {{ block "footer" . }}
-    {{ end }}
+  {{if .Site.Params.themeStyle}}
+  {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
+  {{else}}
+  {{ partial "flex/body-aftercontent.html" . }}
+  {{ end }}
 
-    {{ partial "custom-footer.html" . }}
-  </body>
+  {{ block "footer" . }}
+  {{ end }}
+
+  {{ partial "custom-footer.html" . }}
+
+  {{ partial "flex/scripts.html" . }}
+</body>
+
 </html>

@@ -105,7 +105,7 @@ header {
   right: 30px;
   cursor: pointer; }
 
-article > aside {
+aside {
   background-color: #f9f9f9;
   bottom: 0;
   box-sizing: border-box;
@@ -122,44 +122,44 @@ article > aside {
   top: 3.5rem;
   width: 20rem;
   overflow-y: auto; }
-  article > aside .menu {
+  aside .menu {
     line-height: 2rem;
     list-style-type: none; }
-    article > aside .menu > label {
+    aside .menu > label {
       display: block;
       font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
       font-weight: 100;
       font-size: 130%;
       margin-left: 1rem; }
-    article > aside .menu ul {
+    aside .menu ul {
       display: none; }
-    article > aside .menu > .dd-item {
+    aside .menu > .dd-item {
       margin: 0.5rem 0px 0.5rem 20px; }
-    article > aside .menu .dd-item {
+    aside .menu .dd-item {
       padding-left: 1rem;
       list-style: none;
       font-size: 13px; }
-      article > aside .menu .dd-item.alwaysopen > ul {
+      aside .menu .dd-item.alwaysopen > ul {
         display: block; }
-      article > aside .menu .dd-item.parent > ul {
+      aside .menu .dd-item.parent > ul {
         display: block; }
-      article > aside .menu .dd-item.active > ul {
+      aside .menu .dd-item.active > ul {
         display: block; }
-      article > aside .menu .dd-item.active > div {
+      aside .menu .dd-item.active > div {
         background-color: #eee; }
-        article > aside .menu .dd-item.active > div * {
+        aside .menu .dd-item.active > div * {
           font-weight: bold;
           border-bottom: dotted 1px #00b3e6; }
-      article > aside .menu .dd-item.haschildren > div {
+      aside .menu .dd-item.haschildren > div {
         margin-left: -20px; }
-      article > aside .menu .dd-item div {
+      aside .menu .dd-item div {
         display: flex;
         flex-direction: row; }
-        article > aside .menu .dd-item div * {
+        aside .menu .dd-item div * {
           line-height: inherit; }
-        article > aside .menu .dd-item div i.read-icon {
+        aside .menu .dd-item div i.read-icon {
           display: none; }
-        article > aside .menu .dd-item div i.category-icon {
+        aside .menu .dd-item div i.category-icon {
           display: flex;
           align-items: center;
           justify-content: center;
@@ -167,25 +167,25 @@ article > aside {
           width: 20px;
           cursor: pointer;
           color: #00b3e6; }
-        article > aside .menu .dd-item div a {
+        aside .menu .dd-item div a {
           display: flex;
           flex: 1;
           order: 2;
           padding: 0 0rem;
           text-decoration: none; }
-          article > aside .menu .dd-item div a:hover, article > aside .menu .dd-item div a:focus, article > aside .menu .dd-item div a:active {
+          aside .menu .dd-item div a:hover, aside .menu .dd-item div a:focus, aside .menu .dd-item div a:active {
             background-color: #eee;
             border-radius: .2rem;
             padding: 0 0rem; }
-        article > aside .menu .dd-item div i.category-icon:active,
-        article > aside .menu .dd-item div i.category-icon:focus,
-        article > aside .menu .dd-item div i.category-icon:hover {
+        aside .menu .dd-item div i.category-icon:active,
+        aside .menu .dd-item div i.category-icon:focus,
+        aside .menu .dd-item div i.category-icon:hover {
           background-color: #eee;
           border-radius: .2rem;
           padding: 0 0rem; }
-      article > aside .menu .dd-item li {
+      aside .menu .dd-item li {
         border-left: 1px solid #eee; }
-  article > aside section {
+  aside section {
     margin: 2rem 0rem; }
 
 /*!
@@ -239,10 +239,6 @@ section a {
 section strong {
   font-weight: 500; }
 
-.nav-select {
-  background: #e5e5e5;
-  display: none; }
-
 #sidebar-toggle-span {
   display: none; }
 
@@ -279,39 +275,31 @@ section strong {
   display: none; }
 
 article {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
-  flex: 1; }
-
-article section.page {
-  -webkit-box-flex: 1;
-  -ms-flex: 1;
+  flex-direction: column;
   flex: 1;
   box-sizing: border-box;
   margin: 0 1rem 0 20rem;
   overflow-y: auto;
   padding: 0 4rem; }
-  article section.page h1:first-of-type {
+  article h1:first-of-type {
     margin: 2.5rem 0rem;
     font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     color: #060606; }
-  article section.page h1 {
+  article h1 {
     margin-top: 2rem; }
-  article section.page h2 {
+  article h2 {
     margin-top: 2rem; }
-  article section.page table {
+  article table {
     width: 100%;
     margin-bottom: 2em;
     border-collapse: collapse;
     border-spacing: 0;
     border: 1px solid #e6e6e6; }
-    article section.page table th,
-    article section.page table td {
+    article table th,
+    article table td {
       padding: 0.25rem 0.75rem; }
-    article section.page table th {
+    article table th {
       padding: 0.5rem;
       text-transform: uppercase;
       vertical-align: middle;
@@ -320,66 +308,68 @@ article section.page {
       background: #f6f6f6;
       color: black;
       border-bottom: 2px solid #e5e5e5; }
-    article section.page table td {
+    article table td {
       padding: 0.5rem;
       vertical-align: middle;
       border-bottom: 1px solid #e5e5e5;
       border: 1px solid #e6e6e6;
       color: #323232; }
-    article section.page table td:first-child code {
+    article table td:first-child code {
       background-color: transparent;
       padding: 0; }
-  article section.page img {
+  article img {
     border: 0;
     max-width: 100%;
     margin: 0;
     display: block;
     text-align: center; }
-    article section.page img.border {
+    article img.border {
       border: 2px solid #e6e6e6 !important;
       padding: 2px; }
-    article section.page img.shadow {
+    article img.shadow {
       box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1); }
-    article section.page img.inline {
+    article img.inline {
       display: inline !important;
       margin: 0 !important;
       vertical-align: bottom; }
-    article section.page img.inline {
+    article img.inline {
       display: inline !important;
       margin: 0 !important;
       vertical-align: bottom; }
-  article section.page code {
+  article code {
     font-family: "RobotoMono", monospace; }
-  article section.page p > code,
-  article section.page li code,
-  article section.page table code {
-    padding: 0 0.25rem; }
-  article section.page pre {
+  article p > code,
+  article li code,
+  article table code {
+    padding: 0 .25rem;
+    word-break: break-word; }
+  article pre {
     background-color: #eee;
     border-radius: .2rem;
     color: #444;
     overflow: auto;
-    padding: .5rem; }
-    article section.page pre .copy-to-clipboard {
+    padding: .5rem;
+    min-height: fit-content; }
+    article pre .copy-to-clipboard {
       float: right;
       position: relative;
       right: 0px; }
-  article section.page pre[class*="language-"] {
+  article pre[class*="language-"] {
     background-color: #333;
     color: #eee;
     overflow: auto;
     padding: .5rem;
     text-overflow: ellipsis; }
-  article section.page pre.language-headers {
+  article pre.language-headers {
     background-color: #444;
     color: #ddd; }
-  article section.page pre.language-headers + pre {
+  article pre.language-headers + pre {
     border-radius: 0 0 .2rem .2rem;
     margin-top: -1.7rem;
     padding-top: .52rem;
     position: relative; }
-  article section.page code[class*="language-"],
-  article section.page pre[class*="language-"] {
+  article code[class*="language-"],
+  article pre[class*="language-"] {
     -webkit-hyphens: none;
     -moz-hyphens: none;
     -ms-hyphens: none;
@@ -652,8 +642,8 @@ ul.children.children-card {
     ul.children.children-card > span p {
       padding: 0rem 1rem; }
 
-/* ttt-callout box - fixed position at the bottom of the page */
-.ttt-callout {
+/* replaces ttt-callout  */
+blockquote {
   /* position: fixed;
   bottom: 35px;
   right: 20px; */
@@ -666,20 +656,26 @@ ul.children.children-card {
   margin-bottom: 2rem; }
 
 /* ttt-callout header */
-.ttt-callout .ttt-callout-header {
+/* no longer in use */
+/*.ttt-callout .ttt-callout-header {
   font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
   padding: 1rem 0 2rem;
   font-size: 2.15rem;
   line-height: 1.8rem;
   font-weight: lighter;
-  color: black; }
+  color: black;
+}
+
 
 .ttt-callout ul {
-  padding: 0 1.5rem; }
+  padding: 0 1.5rem;
+}
 
 .ttt-callout ul li {
-  margin: 0.5rem 0; }
-
+  margin: 0.5rem 0;
+}
+*/
+/* adding this line to test a push again ... and again*/
 .ttt-highlight {
   padding: 0 0 0 1rem;
   border-left: 4px solid #00b3e6;
@@ -689,12 +685,6 @@ ul.children.children-card {
   font-size: .8rem;
   font-style: italic; }
 
-i.fa.fa-chevron-right {
-  text-indent: -.9rem; }
-
-i.fa.fa-chevron-down {
-  text-indent: -1rem; }
-
 .expand-label {
   margin: 0.85rem 0 1.7rem 0;
   font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -703,31 +693,27 @@ i.fa.fa-chevron-down {
   line-height: 1.8rem;
   color: black;
   text-indent: -.5rem; }
+  .expand-label i.fa.fa-chevron-right {
+    text-indent: -.9rem; }
+  .expand-label i.fa.fa-chevron-down {
+    text-indent: -1rem; }
 
-@media (max-width: 1024px) {
+@media (max-width: 1220px) {
   section {
     margin-right: 0; }
 
-  section > .toc {
+  nav.shortcuts label {
     display: none; } }
 @media (max-width: 768px) {
-  article {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column; }
-
-  article > aside {
+  aside {
     display: none; }
+    aside.show-nav {
+      display: flex; }
+
+  .burger {
+    display: unset; }
 
   footer {
-    display: none; }
-
-  article > section.page {
-    margin: 0 0;
-    padding: 1rem; }
-
-  article > section.page #navigation label {
     display: none; }
 
   section {
@@ -736,29 +722,21 @@ i.fa.fa-chevron-down {
 
   header {
     padding: 0 1rem; }
+    header nav.shortcuts li .fa {
+      margin: 0; }
+    header nav.shortcuts label {
+      display: none; }
 
-  header > nav.shortcuts > li a {
-    width: 3.5rem; }
-
-  header > nav.shortcuts > li .fa {
-    margin: 0; }
-
-  header > nav.shortcuts > li > a > label {
-    display: none; }
-
-  header > nav.shortcuts > li > a {
-    max-width: 32px; }
-
-  .nav-select {
-    display: block;
-    margin-left: -10px;
-    margin-right: -10px; }
-
-  .nav-select select {
-    display: block; }
-
-  article img {
-    margin-left: -1rem;
-    margin-right: -1rem; } }
+  article {
+    margin: 0;
+    padding: 0 1rem; }
+    article p {
+      margin: 0.5rem 0; }
+    article ul,
+    article ol {
+      margin-left: 0.5rem; } }
+@media (max-width: 480px) {
+  .search {
+    display: none; } }
 
 /*# sourceMappingURL=style.css.map */

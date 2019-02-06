@@ -1,74 +1,92 @@
-@media(max-width:1024px) {
+// This file has CSS rules for managing screens of different sizes
+
+// context for screen widths:
+// The 13inch macbook pro default resolution is 1440px wide
+//      ...at other resolutions, it ranges between 1024px and 1680px
+// giant retina displays go up all the way to 5120px across
+// mobile phones devices widths range between ~320px at the smallest
+// to ~800px for the largest / highest resolution
+// tablets fall in a middle range
+// see more about screen sizes at http://screensiz.es/
+
+// our strategy in general for managing screen widths is
+// - default styles apply to large screens
+// - add additional styles for screens smaller than certain max-widths with media queries below
+// - that often means _hiding_ elements for small screens that don't belong
+
+// large but not the largest screens
+@media(max-width:1220px) {
     section {
-        margin-right: 0
+        margin-right: 0;
     }
 
-    section>.toc {
-        display: none
+    nav.shortcuts {
+        label {
+            display: none;
+        }
     }
 }
 
 
+// tablets and smaller
 @media(max-width:768px) {
-    article {
-        -webkit-box-orient: vertical;
-        -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-        flex-direction: column ;
-    }
 
-    article>aside {
+    // hides the left navigation by default
+    aside {
         display: none;
-    }
-	footer {
-        display: none;
+
+        &.show-nav {
+            display: flex;
+        }
     }
 
-    article > section.page {
-    	margin: 0 0;
-        padding: 1rem;
+    .burger {
+        display: unset;
     }
 
-    article > section.page #navigation label {
+
+    // hides the footer
+    footer {
         display: none;
     }
 
     section {
         margin: 0;
-        padding: 1rem 2rem
+        padding: 1rem 2rem;
     }
 
     header {
-        padding: 0 1rem
-    }
-    header>nav.shortcuts>li a {
-        width: 3.5rem
-    }
-    header>nav.shortcuts>li .fa {
-        margin: 0
+        padding: 0 1rem;
+
+        nav.shortcuts {
+
+            li .fa {
+                margin: 0;
+            }
+
+            label {
+                display: none;
+            }
+        }
     }
 
-    header>nav.shortcuts>li>a>label {
-        display:none;
-    }
-    header>nav.shortcuts>li>a {
-        max-width: 32px;
-    }
+    article {
+        margin: 0;
+        padding: 0 1rem;
 
-    
-    
+        p {
+            margin: 0.5rem 0;
+        }
 
-    .nav-select {
-        display: block; 
-        margin-left: -10px;
-        margin-right: -10px;
+        ul,
+        ol {
+            margin-left: 0.5rem;
+        }
     }
-    .nav-select select {
-        display: block; 
-    }
+}
 
-    article img{
-        margin-left: -1rem;
-        margin-right: -1rem;   
+@media(max-width:480px) {
+    .search {
+        display: none;
     }
 }

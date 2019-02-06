@@ -46,14 +46,6 @@ blockquote {
   font-style: italic;
 }
 
-i.fa.fa-chevron-right {
-  text-indent: -.9rem;
-}
-
-i.fa.fa-chevron-down {
-  text-indent: -1rem;
-}
-
 .expand-label {
   margin: 0.85rem 0 1.7rem 0;
   font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
@@ -62,4 +54,12 @@ i.fa.fa-chevron-down {
   line-height: 1.8rem;
   color: black;
   text-indent: -.5rem;
+
+  i.fa.fa-chevron-right {
+    text-indent: -.9rem;
+  }
+
+  i.fa.fa-chevron-down {
+    text-indent: -1rem;
+  }
 }
