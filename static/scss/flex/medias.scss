@@ -34,8 +34,18 @@
     // hides the left navigation by default
     aside {
         display: none;
+
+        &.show-nav {
+            display: flex;
+        }
     }
 
+    .burger {
+        display: unset;
+    }
+
+
+    // hides the footer
     footer {
         display: none;
     }

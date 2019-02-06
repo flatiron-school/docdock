@@ -707,6 +707,11 @@ blockquote {
 @media (max-width: 768px) {
   aside {
     display: none; }
+    aside.show-nav {
+      display: flex; }
+
+  .burger {
+    display: unset; }
 
   footer {
     display: none; }

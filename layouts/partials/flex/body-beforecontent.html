@@ -5,7 +5,6 @@
   {{- if not .Site.Params.disableSearch}}
   {{ partial "search.html"}}
   {{- end}}
-  <div class="burger"><a href="javascript:void(0);" style="font-size:15px;">&#9776;</a></div>
   {{- with .Site.Menus.shortcuts}}
   <nav class="shortcuts">
     {{- range sort . "Weight"}}
@@ -15,6 +14,7 @@
       </a>
     </li>
     {{- end}}
+    <li class="burger"><a href="javascript:void(0);" style="font-size:1.5rem;">&#9776;</a></li>
   </nav>
   {{- end}}
 </header>
