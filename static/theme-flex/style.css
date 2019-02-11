@@ -282,6 +282,8 @@ article {
   margin: 0 1rem 0 20rem;
   overflow-y: auto;
   padding: 0 4rem; }
+  article a {
+    color: #00b3e6; }
   article h1:first-of-type {
     margin: 2.5rem 0rem;
     font-family: "--apple-system", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
