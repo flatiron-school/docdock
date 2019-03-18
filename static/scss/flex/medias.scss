@@ -15,78 +15,78 @@
 // - that often means _hiding_ elements for small screens that don't belong
 
 // large but not the largest screens
-@media(max-width:1220px) {
-    section {
-        margin-right: 0;
-    }
+@media (max-width: 1220px) {
+  section {
+    margin-right: 0;
+  }
 
-    nav.shortcuts {
-        label {
-            display: none;
-        }
+  nav.shortcuts {
+    label {
+      display: none;
     }
+  }
 }
-
 
 // tablets and smaller
-@media(max-width:768px) {
+@media (max-width: 768px) {
+  // hides the left navigation by default
+  aside {
+    display: none;
 
-    // hides the left navigation by default
-    aside {
-        display: none;
-
-        &.show-nav {
-            display: flex;
-        }
+    &.show-nav {
+      display: flex;
     }
+  }
 
-    .burger {
-        display: unset;
-    }
+  .burger {
+    display: unset;
+  }
 
+  // hides the footer
+  footer {
+    display: none;
+  }
 
-    // hides the footer
-    footer {
-        display: none;
-    }
+  section {
+    margin: 0;
+    padding: 1rem 2rem;
+  }
 
-    section {
+  header {
+    padding: 0 1rem;
+
+    nav.shortcuts {
+      li .fa {
         margin: 0;
-        padding: 1rem 2rem;
+      }
+
+      label {
+        display: none;
+      }
+    }
+  }
+
+  article {
+    margin: 0;
+    padding: 0 1rem;
+
+    p {
+      margin: 0.5rem 0;
     }
 
-    header {
-        padding: 0 1rem;
-
-        nav.shortcuts {
-
-            li .fa {
-                margin: 0;
-            }
-
-            label {
-                display: none;
-            }
-        }
+    ul,
+    ol {
+      margin-left: 0.5rem;
     }
+  }
 
-    article {
-        margin: 0;
-        padding: 0 1rem;
-
-        p {
-            margin: 0.5rem 0;
-        }
-
-        ul,
-        ol {
-            margin-left: 0.5rem;
-        }
-    }
+  .chevrons {
+    margin: 0;
+  }
 }
 
-@media(max-width:480px) {
-    .search {
-        display: none;
-    }
+@media (max-width: 480px) {
+  .search {
+    display: none;
+  }
 }

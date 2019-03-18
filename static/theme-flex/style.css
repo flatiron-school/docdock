@@ -320,7 +320,6 @@ section strong {
   padding: 0.25em;
   flex-grow: 2;
   align-self: stretch;
-  font-size: 1.3rem;
 }
 #navigation a label:hover {
   cursor: pointer;
@@ -888,6 +887,10 @@ blockquote {
   article ul,
 article ol {
     margin-left: 0.5rem;
+  }
+
+  .chevrons {
+    margin: 0;
   }
 }
 @media (max-width: 480px) {
