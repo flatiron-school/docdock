@@ -4,115 +4,113 @@
  */
 
 * {
-    margin: 0;
-    padding: 0
+  margin: 0;
+  padding: 0;
 }
 
 html,
 body {
-    height: 100%
+  height: 100%;
 }
 
 html {
-    font-family: 'Roboto', sans-serif;
-    font-size: 14px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
 }
 
 body {
-    background-color: #fff;
-    color: #222;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    line-height: 1.5rem
+  background-color: #fff;
+  color: #222;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  line-height: 1.5rem;
 }
 
 :disabled {
-    pointer-events: none
+  pointer-events: none;
 }
 
 a {
-    color: inherit
+  color: inherit;
 }
 
 a:focus {
-    outline: 0
+  outline: 0;
 }
 
-
-
-
+.chevrons {
+  margin: 0 1rem 0 20rem;
+}
 
 section ol,
 section ul {
-    padding: 0 1.5rem;
-    margin: 0
+  padding: 0 1.5rem;
+  margin: 0;
 }
 
 section ul {
-    list-style-type: square
+  list-style-type: square;
 }
 
 section a {
-    color: #00b3e6
+  color: #00b3e6;
 }
 
 section strong {
-    font-weight: 500
+  font-weight: 500;
 }
 
 #sidebar-toggle-span {
-    display: none;
+  display: none;
 }
 
 #navigation {
-    border-top: 1px solid #444444;
-    border-bottom: 1px solid #444444;
-    padding: .5rem 0;
-    margin: .5rem 0;
+  border-top: 1px solid #444444;
+  border-bottom: 1px solid #444444;
+  padding: 0.5rem 0;
+  margin: 0.5rem 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+
+  a {
     display: flex;
-    flex-direction: row;
+    color: #222;
     align-items: center;
-    justify-content: space-between;
 
-    a {
-        display: flex;
-        color: #222;
-        align-items: center;
-
-        i {
-            font-size: 1.5em;
-        }
-
-        label {
-            padding: .25em;
-            flex-grow: 2;
-            align-self: stretch;
-            font-size: 1.3rem;
-        }
-
-        label:hover {
-            cursor: pointer;
-        }
-
-
+    i {
+      font-size: 1.5em;
     }
 
-    a.nav-next {
-        text-align: right;
+    label {
+      padding: 0.25em;
+      flex-grow: 2;
+      align-self: stretch;
+      font-size: 1.3rem;
     }
 
-    a:hover {
-        text-decoration: none;
-        color: #00b3e6;
-        cursor: pointer;
+    label:hover {
+      cursor: pointer;
     }
+  }
+
+  a.nav-next {
+    text-align: right;
+  }
+
+  a:hover {
+    text-decoration: none;
+    color: #00b3e6;
+    cursor: pointer;
+  }
 }
 
 .burger {
-    display: none;
+  display: none;
 }
