@@ -63,3 +63,12 @@ blockquote {
     text-indent: -1rem;
   }
 }
+
+article ul,
+article ol {
+  margin: 0 0 0 1.5rem;
+}
+
+code {
+  background-color: #eee;
+}
