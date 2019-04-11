@@ -359,6 +359,7 @@ article h1 {
 }
 article h2 {
   margin-top: 2rem;
+  border-bottom: 1px solid;
 }
 article table {
   width: 100%;
