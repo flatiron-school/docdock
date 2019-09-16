@@ -1,9 +1,9 @@
 <header>
   <div class="logo">
-    {{ partial "header.html" . }}
+    {{ partialCached "header.html" . }}
   </div>
   {{- if not .Site.Params.disableSearch}}
-  {{ partial "search.html"}}
+  {{ partialCached "search.html" . }}
   {{- end}}
   {{- with .Site.Menus.shortcuts}}
   <nav class="shortcuts">
@@ -29,12 +29,12 @@
     </li>
     {{- end}}
 
-    {{- partial "menu.html" . }}
+    {{- partialCached "menu.html" . }}
 
   </ul>
 
-  {{- partial "language-selector.html" . }}
+  {{- partialCached "language-selector.html" . }}
   <section>
-    {{- partial "menu-footer.html" . }}
+    {{- partialCached "menu-footer.html" . }}
   </section>
 </aside>

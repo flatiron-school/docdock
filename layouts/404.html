@@ -5,14 +5,14 @@
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
     {{else}}
-      {{ partial "flex/head.html" . }}
+      {{ partialCached "flex/head.html" . }}
     {{end}}
   </head>
   <body data-url="{{ .RelPermalink }}">
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
     {{else}}
-      {{ partial "flex/body-beforecontent.html" . }}
+      {{ partialCached "flex/body-beforecontent.html" . }}
     {{end}}
     
 	<h1>{{T "title-404"}}</h1>
@@ -26,13 +26,13 @@
     {{if .Site.Params.themeStyle}}
       {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
     {{else}}
-      {{ partial "flex/body-aftercontent.html" . }}
+      {{ partialCached "flex/body-aftercontent.html" . }}
     {{ end }}
 
     {{ block "footer" . }}
     {{ end }}
 
-    {{ partial "custom-footer.html" . }}
+    {{ partialCached "custom-footer.html" . }}
   </body>
 </html>
 

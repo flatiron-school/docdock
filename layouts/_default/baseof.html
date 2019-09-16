@@ -6,7 +6,7 @@
   {{if .Site.Params.themeStyle}}
   {{ partial (printf "%s/head.html" .Site.Params.themeStyle) . }}
   {{else}}
-  {{ partial "flex/head.html" . }}
+  {{ partialCached "flex/head.html" . }}
   {{end}}
 </head>
 
@@ -14,7 +14,7 @@
   {{if .Site.Params.themeStyle}}
   {{ partial (printf "%s/body-beforecontent.html" .Site.Params.themeStyle) . }}
   {{else}}
-  {{ partial "flex/body-beforecontent.html" . }}
+  {{ partialCached "flex/body-beforecontent.html" . }}
   {{end}}
 
   <article>
@@ -26,15 +26,15 @@
   {{if .Site.Params.themeStyle}}
   {{ partial (printf "%s/body-aftercontent.html" .Site.Params.themeStyle) . }}
   {{else}}
-  {{ partial "flex/body-aftercontent.html" . }}
+  {{ partialCached "flex/body-aftercontent.html" . }}
   {{ end }}
 
   {{ block "footer" . }}
   {{ end }}
 
-  {{ partial "custom-footer.html" . }}
+  {{ partialCached "custom-footer.html" . }}
 
-  {{ partial "flex/scripts.html" . }}
+  {{ partialCached "flex/scripts.html" . }}
 </body>
 
 </html>

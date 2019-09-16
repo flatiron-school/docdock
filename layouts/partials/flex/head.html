@@ -14,5 +14,5 @@
 <script type="text/javascript">
       var baseurl = "{{.Site.BaseURL}}";
 </script>
-{{ partial "custom-head.html" . }}
-{{ partial "google-analytics.html" }}
+{{ partialCached "custom-head.html" . }}
+{{ partialCached "google-analytics.html" . }}
